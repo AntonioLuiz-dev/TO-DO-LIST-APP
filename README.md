@@ -47,6 +47,9 @@ O contador é derivado do estado principal, garantindo consistência e evitando 
 
 ---
 
+Offline First
+A aplicação funciona completamente offline após o primeiro carregamento, utilizando o localStorage do navegador para persistência dos dados, garantindo uma experiência rápida, confiável e independente de conexão com a internet.
+
 ## 📈 Possíveis Evoluções
 - Backend e autenticação
 - Drag and drop entre colunas
