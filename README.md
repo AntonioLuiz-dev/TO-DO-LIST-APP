@@ -62,3 +62,7 @@ A aplicação funciona completamente offline após o primeiro carregamento, util
 
 Antonio — Desenvolvedor Front-End  
 Projeto desenvolvido com foco em portfólio e entrevistas técnicas.
+
+## 📱💻 Preview do Projeto
+<br>
+<img src="https://github.com/AntonioLuiz-dev/CALCULADORA/blob/main/assets/mockup.png?raw=true"500px"/>
