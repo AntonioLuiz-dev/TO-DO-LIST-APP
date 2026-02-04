@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List | Antonio Dev</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <main class="app">
+        <header class="header">
+            <div>
+                <h1>📝 Minhas Tarefas</h1>
+                <p id="counter">0 tarefas pendentes</p>
+            </div>
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </header>
+
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Adicionar nova tarefa..." required />
+            <button type="submit">+</button>
+        </form>
+
+        <div class="filters">
+            <button data-filter="all" class="active">Todas</button>
+            <button data-filter="pending">Pendentes</button>
+            <button data-filter="done">Concluídas</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

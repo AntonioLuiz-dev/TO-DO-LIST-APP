@@ -1,0 +1,154 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --text-color: #ffffff;
+    --accent: #00c6ff;
+}
+
+body.light {
+    --bg-gradient: linear-gradient(135deg, #e0eafc, #cfdef3);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --text-color: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: background 0.3s;
+}
+
+.app {
+    width: 100%;
+    max-width: 560px;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 26px;
+    padding: 32px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+#counter {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    gap: 12px;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    font-size: 1rem;
+}
+
+form button {
+    width: 52px;
+    font-size: 1.8rem;
+    border-radius: 14px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.filters button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.filters button.active,
+.filters button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.18);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+}
+
+li.dragging {
+    opacity: 0.4;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
