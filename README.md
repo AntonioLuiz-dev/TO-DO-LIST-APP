@@ -65,4 +65,4 @@ Projeto desenvolvido com foco em portfólio e entrevistas técnicas.
 
 ## 📱💻 Preview do Projeto
 <br>
-<img src="https://github.com/AntonioLuiz-dev/TO-DO-LIST-APP/blob/main/assets/mockup.png?raw=true"500px"/>
+<img src="https://github.com/AntonioLuiz-dev/TO-DO-LIST-APP/blob/main/assets/mockup.png?raw=true" width="500px"/>
